@@ -1,0 +1,82 @@
+body {
+    margin: 20px;
+}
+.message {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    background-color: red;
+    border-radius: 0.5em;
+    padding: 10px;
+    align-items: flex-end;
+}
+.avatar {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 5em;
+    margin-right: 10px;
+}
+.avatar img {
+    width: auto;
+    height: auto;
+    border-radius: 5em;
+}
+.container_box {
+    display: flex;
+    width: 100%;
+    border-radius: 0.5em;
+    background-color: darkslategrey;
+    position: relative;
+}
+
+.container_box::after, .container_box::before {
+    content: "";
+    position: absolute;
+    left: -9%;
+    bottom: .0em;
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.container_box::before {
+    border-top: none;
+    height: .9em;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background-color: darkslategrey;
+    border-color: darkslategrey;
+    margin-left: .9em;
+    z-index: 0;
+}
+.box {
+    width: 100%;
+    z-index: 100;
+    padding: 10px 20px;
+}
+.name {
+    margin-bottom: 5px;
+}
+.name span {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: silver;
+}
+.msg {
+    float: left;
+}
+.msg span {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+.time {
+    float: right;
+}
+.time span {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #808080;
+}
