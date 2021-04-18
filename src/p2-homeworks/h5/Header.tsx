@@ -1,12 +1,10 @@
 import React from 'react'
+import NavBar from "./pages/NavBar";
 
 function Header() {
-    return (
-        <div>
-            // add NavLinks
-
-        </div>
-    )
+  return (
+    <NavBar/>
+  )
 }
 
 export default Header
