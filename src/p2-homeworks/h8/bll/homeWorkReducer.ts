@@ -1,12 +1,12 @@
 export const homeWorkReducer = (state: any, action: any): any => {
     switch (action.type) {
         case "sort": {
-
-            return state
+            const newState = [...state].sort((a: any, b: any) => (a.name > b.name ? 1 : -1))
+            return action.payload === 'up' ? newState : newState.reverse()
         }
         case "check": {
-
-            return state
+            const newState = [...state].filter(el => el.age >= 18)
+            return newState
         }
         default: return state
     }
