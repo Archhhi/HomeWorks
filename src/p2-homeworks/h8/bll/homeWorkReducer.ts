@@ -1,7 +1,14 @@
-export const homeWorkReducer = (state: any, action: any): any => {
+import {UserType} from "../HW8";
+
+type ActionType = {
+    type: 'sort' | 'check'
+    payload?: 'up' | 'down'
+}
+
+export const homeWorkReducer = (state: UserType[], action: ActionType): UserType[] => {
     switch (action.type) {
         case "sort": {
-            const newState = [...state].sort((a: any, b: any) => (a.name > b.name ? 1 : -1))
+            const newState = [...state].sort((a, b) => (a.name > b.name ? 1 : -1))
             return action.payload === 'up' ? newState : newState.reverse()
         }
         case "check": {
