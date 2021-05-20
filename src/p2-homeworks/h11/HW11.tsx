@@ -28,7 +28,6 @@ function HW11() {
         <span>{value1}</span>
         <SuperDoubleRange
           value={[value1, value2]}
-          //@ts-ignore
           onChangeRange={onChangeSuperDoubleRange}
         />
         <span>{value2}</span>

@@ -3,7 +3,7 @@ import s from "./SuperDoubleRange.module.css";
 import {Slider} from '@material-ui/core'
 
 type SuperDoubleRangePropsType = {
-  onChangeRange?: (newValue: number | number[]) => void
+  onChangeRange?: (newValue: [number, number]) => void
   value?: [number, number]
   // min, max, step, disable, ...
 }
