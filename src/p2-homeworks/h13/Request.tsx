@@ -15,8 +15,8 @@ const Request = () => {
 
   return (
     <div>
-      <SuperButton onClick={onClickButton}/>
-      <SuperCheckbox onChangeChecked={setIsChecked}/>
+      <SuperButton onClick={onClickButton}>Отправить post запрос</SuperButton>
+      <SuperCheckbox onChangeChecked={setIsChecked}/> true/false
       <div>{response}</div>
     </div>
   )
